@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rent Space</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assest/Rent Space1.png" alt="img">
+        </div>
+        <ul class="nav-links">
+            <li><a class="bg"href="#">Home</a></li>
+            <li><a class="bg"href="about.html">About</a></li>
+            <li><a class="bg"href="services.html">Services</a></li>
+            <li><a class="bg"href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="buttons">
+            <button id="create-post"><a href="payment2.html">Create Post</a></button>
+            <button id="profile"><a href="index.html">Log Out</a></button>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <!-- body start -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for rooms...">
+        <button onclick="searchRooms()">Search</button>
+    </div>
+    <div class="container">
+        <!-- Room Cards -->
+        <div class="room-card" data-name="Ashoka Garden">
+            <div class="slider">
+                <div><img src="./assest/img10.jpg" alt="Room 1"></div>
+                <div><img src="./assest/img11.jpg" alt="Room 2"></div>
+                <div><img src="./assest/img24.jpg" alt="Room 3"></div>
+            </div>
+            <div class="room-details">
+                <h3>Ashoka Garden</h3>
+                <p>Price: <span>Rs3200</span> per month</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <button class="view-more-button"><a href="payment.html">View More</a></button>
+        </div>
+        <div class="room-card" data-name="Anand Nagar">
+            <div class="slider">
+                <div><img src="./assest/img4.jpg" alt="Room 1"></div>
+                <div><img src="./assest/img5.jpg" alt="Room 2"></div>
+                <div><img src="./assest/img25.jpg" alt="Room 3"></div>
+            </div>
+            <div class="room-details">
+                <h3>Anand Nagar</h3>
+                <p>Price: <span>Rs2800</span>  per month</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <button class="view-more-button"><a href="payment.html">View More</a></button>
+        </div>
+        <div class="room-card" data-name="Piplani">
+            <div class="slider">
+                <div><img src="./assest/img6.jpg" alt="Room 1"></div>
+                <div><img src="./assest/img7.jpg" alt="Room 2"></div>
+                <div><img src="./assest/img26.jpg" alt="Room 3"></div>
+            </div>
+            <div class="room-details">
+                <h3>Piplani</h3>
+                <p>Price: <span>Rs3700</span>  per month</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <button class="view-more-button"><a href="payment.html">View More</a></button>
+        </div>
+
+        <div class="room-card" data-name="MP Nagar">
+            <div class="slider">
+                <div><img src="./assest/img8.jpg" alt="Room 1"></div>
+                <div><img src="./assest/img9.jpg" alt="Room 2"></div>
+                <div><img src="./assest/img27.jpg" alt="Room 3"></div>
+            </div>
+            <div class="room-details">
+                <h3>MP Nagar</h3>
+                <p>Price: <span>Rs4200</span>  per month</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <button class="view-more-button"><a href="payment.html">View More</a></button>
+        </div>
+        <div class="room-card" data-name="Hamidiya">
+            <div class="slider">
+                <div><img src="./assest/img10.jpg" alt="Room 1"></div>
+                <div><img src="./assest/img11.jpg" alt="Room 2"></div>
+                <div><img src="./assest/img28.jpg" alt="Room 3"></div>
+            </div>
+            <div class="room-details">
+                <h3>Hamidiya</h3>
+                <p>Price: <span>Rs3250</span>  per month</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <button class="view-more-button"><a href="payment.html">View More</a></button>
+        </div>
+        <div class="room-card" data-name="Indrapuri">
+            <div class="slider">
+                <div><img src="./assest/img16.jpg" alt="Room 1"></div>
+                <div><img src="./assest/img13.jpg" alt="Room 2"></div>
+                <div><img src="./assest/img29.jpg" alt="Room 3"></div>
+            </div>
+            <div class="room-details">
+                <h3>Indrapuri</h3>
+                <p>Price: <span>Rs3800</span>  per month</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <button class="view-more-button"><a href="payment.html">View More</a></button>
+        </div>
+        <div class="room-card" data-name="Govindpura">
+            <div class="slider">
+                <div><img src="./assest/img14.jpg" alt="Room 1"></div>
+                <div><img src="./assest/img15.jpg" alt="Room 2"></div>
+                <div><img src="./assest/img30.jpg" alt="Room 3"></div>
+            </div>
+            <div class="room-details">
+                <h3>Govindpura</h3>
+                <p>Price: <span>Rs5000</span>  per month</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <button class="view-more-button"><a href="payment.html">View More</a></button>
+        </div>
+        <div class="room-card" data-name="Puspha Nagar">
+            <div class="slider">
+                <div><img src="./assest/img16.jpg" alt="Room 1"></div>
+                <div><img src="./assest/img17.jpg" alt="Room 2"></div>
+                <div><img src="./assest/img24.jpg" alt="Room 3"></div>
+            </div>
+            <div class="room-details">
+                <h3>Puspha Nagar</h3>
+                <p>Price: <span>Rs3700</span>  per month</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <button class="view-more-button"><a href="payment.html">View More</a></button>
+        </div>
+        <div class="room-card" data-name="Minal Residency">
+            <div class="slider">
+                <div><img src="./assest/img18.jpg" alt="Room 1"></div>
+                <div><img src="./assest/img19.jpg" alt="Room 2"></div>
+                <div><img src="./assest/img23.jpg" alt="Room 3"></div>
+            </div>
+            <div class="room-details">
+                <h3>Minal Residency </h3>
+                <p>Price: <span>Rs4800</span>  per month</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>   
+            </div>
+            <button class="view-more-button"><a href="payment.html">View More</a></button>
+        </div>
+        <!-- Repeat the above structure for other rooms -->
+    </div>
+
+    <!-- JavaScript for Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+        function searchRooms() {
+    var input, filter, cards, card, name, i;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    cards = document.getElementsByClassName("room-card");
+    for (i = 0; i < cards.length; i++) {
+        card = cards[i];
+        name = card.getAttribute('data-name');
+        if (name.toUpperCase().indexOf(filter) > -1) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+    }
+
+    // Redirect to the first visible room card if any card is visible
+    var visibleCards = Array.from(cards).filter(function (card) {
+        return card.style.display !== "none";
+    });
+    if (visibleCards.length > 0) {
+        window.location.href = "#" + visibleCards[0].getAttribute("data-name");
+    }
+}
+
+    </script>
+</body>
